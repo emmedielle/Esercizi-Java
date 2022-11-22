@@ -1,0 +1,23 @@
+
+public class SommaCifreDemo {
+	
+	public static int SommaCifre(int n) {
+		
+		if (n<=9)
+			return n;
+		else
+			{
+			 //int n0 = n%10;
+			 return n%10 + SommaCifre(n/10);
+			}
+	}
+	
+	public static void main(String[] args) {
+		
+		int n = 1245678;
+		
+		System.out.println("La somma delle cifre di "+n+" è "+SommaCifre(n));
+		
+	}
+
+}
